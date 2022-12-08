@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h1>Update {{AOT.name}}</h1>
+<form method="post"> 
+    {% csrf_token %}   
+    {{form.as_p}}
+    <button type="submit" value="OK">Update the  character</button>
+
+</form>
+
+
+{% endblock %}
