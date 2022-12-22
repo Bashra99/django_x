@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+
+{% block content%}
+
+<div class="card">
+    <img src="{{aot.img_url}}" alt="{{aot.name}}" width="200px"/>
+    <div class="content">
+    <h3>{{aot.name}}</h3>
+    <h4>Purchaser: {{aot.purchaser}}</h4>
+    <p>Description: {{aot.description}}</p>
+    <a href="{% url 'AOT'%}">character lits</a>
+    <a href="{% url 'aot_update' aot.pk %}">Edit</a>
+    <a href="{% url 'aot_delete' aot.pk %}">Delete</a>
+
+    
+
+
+    
+</div>
+</div>
+
+{% endblock %}

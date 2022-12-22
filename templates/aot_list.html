@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% block content%}
+
+<h1>AOT character lits </h1>
+<h2>character list:</h2>
+<ul>
+    {% for aot in object_list %}
+    <div class="card" id="project-3">
+        <h3>{{aot.name}}</h3>
+        <a href="{% url 'aot_detail' aot.id %}">View</a>
+        <a href="{% url 'aot_update' aot.id %}">Edit</a>
+        <a href="{% url 'aot_delete' aot.id %}">Delete</a>
+    </div>
+    {% endfor %}
+</ul>
+{% endblock %}
+

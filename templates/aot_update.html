@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>Update {{AOT.name}}</h1>
+<h1>Update {{aot.name}}</h1>
 <form method="post"> 
     {% csrf_token %}   
     {{form.as_p}}
